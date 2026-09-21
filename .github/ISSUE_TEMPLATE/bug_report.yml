@@ -1,0 +1,50 @@
+name: Bug report
+description: Report a reproducible defect or output mismatch
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: "Do not report security vulnerabilities publicly; use the repository's private vulnerability reporting instead."
+  - type: input
+    id: revision
+    attributes:
+      label: Repository revision
+      description: Commit SHA, tag, or release.
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What happened, and what did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Reproduction
+      description: Exact command, minimal input description, and deterministic steps.
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: OS, architecture, hardware, toolchain, container/image digest, and relevant dependency versions.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Logs or output comparison
+      description: Include concise diagnostics and the first relevant difference. Remove credentials and private data.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist
+      options:
+        - label: I searched for an existing issue.
+          required: true
+        - label: This report contains no credentials or private genomic data.
+          required: true
