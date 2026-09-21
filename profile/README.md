@@ -1,5 +1,9 @@
 # Baremetal Bioinformatics
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Baremetal-Bioinformatics/.github/main/assets/logo.svg" width="160" alt="Baremetal Bioinformatics DNA processor logo">
+</p>
+
 **Correctness-first bioinformatics systems for modern heterogeneous hardware.**
 
 We build and measure open tools that make genomics workflows faster, more reproducible, and more hardware-aware—without weakening scientific output contracts.

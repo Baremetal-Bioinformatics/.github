@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Baremetal Bioinformatics logo</title>
+  <desc id="desc">A DNA double helix inside a bare processor die.</desc>
+  <rect width="512" height="512" fill="#11181c"/>
+
+  <!-- Processor die and four robust circuit pins. -->
+  <g fill="none" stroke="#20c7b5" stroke-width="22" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="112" y="112" width="288" height="288" rx="54"/>
+    <path d="M256 74 V112 M256 400 V438 M74 256 H112 M400 256 H438"/>
+  </g>
+  <g fill="#11181c" stroke="#20c7b5" stroke-width="16">
+    <circle cx="256" cy="62" r="14"/>
+    <circle cx="256" cy="450" r="14"/>
+    <circle cx="62" cy="256" r="14"/>
+    <circle cx="450" cy="256" r="14"/>
+  </g>
+
+  <!-- Opposing backbones form the DNA double helix. -->
+  <g fill="none" stroke="#f1f5f4" stroke-width="28" stroke-linecap="round">
+    <path d="M206 158 C206 214 306 214 306 256 C306 298 206 298 206 354"/>
+    <path d="M306 158 C306 214 206 214 206 256 C206 298 306 298 306 354"/>
+  </g>
+
+  <!-- Three foreground base pairs keep the DNA readable at avatar scale. -->
+  <g stroke="#20c7b5" stroke-width="16" stroke-linecap="round">
+    <path d="M224 206 H288"/>
+    <path d="M224 256 H288"/>
+    <path d="M224 306 H288"/>
+  </g>
+</svg>
