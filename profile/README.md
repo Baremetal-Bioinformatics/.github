@@ -14,5 +14,6 @@ We build and measure open tools that make genomics workflows faster, more reprod
 ## Projects
 
 - [**umseq**](https://github.com/Baremetal-Bioinformatics/umseq) — a Rust/CUDA pressure test of unified-memory RNA-seq processing on DGX Spark and Apple silicon.
+- [**Research Roadmap**](https://github.com/orgs/Baremetal-Bioinformatics/projects/1) — cross-repository milestones, experiments, and dependencies.
 
 More coordinated projects will be added as their contracts and reproduction paths are ready.
