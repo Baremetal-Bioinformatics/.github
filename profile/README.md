@@ -6,7 +6,7 @@
 
 **Correctness-first bioinformatics systems for modern heterogeneous hardware.**
 
-We build and measure open tools that make genomics workflows faster, more reproducible, and more hardware-aware—without weakening scientific output contracts.
+We reimplement established genomics workflows as purpose-built applications, then check every stage against the pinned reference they claim to reproduce. [baremetalbio.dev](https://baremetalbio.dev/)
 
 ## Principles
 
@@ -17,7 +17,6 @@ We build and measure open tools that make genomics workflows faster, more reprod
 
 ## Projects
 
-- [**umseq**](https://github.com/Baremetal-Bioinformatics/umseq) — a Rust/CUDA pressure test of unified-memory RNA-seq processing on DGX Spark and Apple silicon.
-- [**Research Roadmap**](https://github.com/orgs/Baremetal-Bioinformatics/projects/1) — cross-repository milestones, experiments, and dependencies.
-
-More coordinated projects will be added as their contracts and reproduction paths are ready.
+- [**nomics**](https://github.com/Baremetal-Bioinformatics/nomics): the nf-core/sarek germline pipeline, FASTQ to VCF, reimplemented from scratch as one Rust process on CPU and CUDA. Same records as sarek 3.10.0 at every stage boundary; a 30× HG002 genome in 1 h 00 min against 11 h 24 min for sarek on one DGX Spark. Research software, not clinically validated. [Results](https://github.com/Baremetal-Bioinformatics/nomics/blob/main/RESULTS.md) · [Reproduce](https://github.com/Baremetal-Bioinformatics/nomics/blob/main/REPRODUCE.md)
+- [**umseq**](https://github.com/Baremetal-Bioinformatics/umseq): an earlier experiment in unified-memory RNA-seq processing on DGX Spark, now superseded by nomics. Kept for reference.
+- [**Research Roadmap**](https://github.com/orgs/Baremetal-Bioinformatics/projects/1): cross-repository milestones, experiments, and dependencies.
